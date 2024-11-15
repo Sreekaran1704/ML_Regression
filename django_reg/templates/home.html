@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action= "{% url 'result' %}">
+
+        {% csrf_token %}
+
+        Company : <input type="text" required name="Company"> <br> <br>
+        TypeName : <input type="text" required name="TypeName"> <br> <br>
+        Inches : <input type="text" required name="Inches"> <br> <br>
+        Ram : <input type="text" required name="Ram"> <br> <br>
+        Os : <input type="text" required name="OS"> <br>  <br>
+        Screen : <input type="text" required name="Screen"> <br> <br>
+        TouchScreen : <input type="text" required name="TouchScreen"> <br> <br>
+        IPSpanel : <input type="text" required name="IPSpanel"> <br> <br>
+        RetinaDisplay : <input type="text" required name="RetinaDisplay"> <br> <br>
+        CPU_freq : <input type="text" required name="CPU_freq"> <br> <br>
+        CPU_model : <input type="text" required name="CPU_model"> <br> <br>
+        PrimaryStorage : <input type="text" required name="PrimaryStorage"> <br> <br>
+        SecondaryStorage : <input type="text" required name="SecondaryStorage"> <br> <br>
+        PrimaryStorageType : <input type="text" required name="PrimaryStorageType"> <br> <br>
+        SecondaryStorageType : <input type="text" required name="SecondaryStorageType"> <br> <br>
+        GPU_company : <input type="text" required name="GPU_company"> <br> <br>
+
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
